@@ -3,7 +3,6 @@ source :gemcutter
 gem "rack", :git => "git://github.com/rack/rack.git"  # rack gem ist verbroken
 gem "thin"
 gem "dm-sqlite-adapter", "1.0.0"
-gem "dm-postgres-adapter", "1.0.0"
 gem "dm-core", "1.0.0"
 gem "dm-timestamps", "1.0.0"
 gem "dm-types", "1.0.0"
@@ -23,8 +22,11 @@ gem "json", "1.1.9"
 gem "sinatra", "1.0.0"
 gem "sinatra-authorization", "1.0.0"
 
-# Required to deploy on Heroku
-gem "do_postgres", "0.10.2"
+group :production do
+  gem "dm-postgres-adapter", "1.0.0"
+  gem "do_postgres", "0.10.2"
+  gem "pg"
+end
 
 # These are dependencies for the various notifiers. Uncomment as appropriate.
 # = Email
@@ -36,15 +38,11 @@ gem "broach", :git => "git://github.com/Manfred/broach.git"
 gem "nap", :git => "git://github.com/qrush/nap.git"
 
 # = Dependencies for the :dj builder
-gem "activerecord"
-gem "sqlite3-ruby"
-gem "delayed_job", :git => "git://github.com/tobi/delayed_job.git"
+# gem "activerecord"
+# gem "sqlite3-ruby"
+# gem "delayed_job", :git => "git://github.com/tobi/delayed_job.git"
 # = Dependency for the :resque builder
 # gem "resque"
-
-# Uncomment if you're using pg or mysql instead of sqlite
-gem "pg"
-# gem "mysql"
 
 # = Development dependencies.
 group :test do
