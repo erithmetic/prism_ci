@@ -29,13 +29,13 @@ gem "sinatra-authorization", "1.0.0"
 # = IRC
 # gem "shout-bot"
 # = Campfire
-# gem "broach", :git => "git://github.com/Manfred/broach.git"
-# gem "nap", :git => "git://github.com/qrush/nap.git"
+gem "broach", :git => "git://github.com/Manfred/broach.git"
+gem "nap", :git => "git://github.com/qrush/nap.git"
 
 # = Dependencies for the :dj builder
-# gem "activerecord"
-# gem "sqlite3-ruby"
-# gem "delayed_job", :git => "git://github.com/tobi/delayed_job.git"
+gem "activerecord"
+gem "sqlite3-ruby"
+gem "delayed_job", :git => "git://github.com/tobi/delayed_job.git"
 # = Dependency for the :resque builder
 # gem "resque"
 
