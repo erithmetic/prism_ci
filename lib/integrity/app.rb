@@ -130,7 +130,8 @@ module Integrity
     get "/:project/builds/:build/report" do
       login_required unless current_project.public?
 
-      current_build.output
+      output = current_build.output
+      output.sub(/.*<!DOCTYPE/m,'<!DOCTYPE')
     end
   end
 end
