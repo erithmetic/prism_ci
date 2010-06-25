@@ -12,6 +12,7 @@ module Integrity
     property :branch,     String,   :required => true, :default => "master"
     property :command,    String,   :required => true, :length => 255, :default => "rake"
     property :public,     Boolean,  :default  => true
+    property :format,     String
 
     timestamps :at
 
@@ -78,6 +79,10 @@ module Integrity
     def public=(v)
       return attribute_set(:public, v == "1") if %w[0 1].include?(v)
       attribute_set(:public, !!v)
+    end
+
+    def html?
+      format ? format.downcase == 'html' : false
     end
 
     private
