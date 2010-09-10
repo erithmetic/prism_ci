@@ -66,10 +66,9 @@ gem "nap"
 #  gem "turn"
 #end
 
-#group :prism_acceptance do
-#  gem 'bundler'
+group :prism_acceptance do
 #  gem 'capybara'
-#  gem 'cucumber'
+  gem 'cucumber'
 #  gem 'cucumber-rails'
 #  gem 'rake'
 #  gem 'rspec', '~>2.0.0.beta.17'
@@ -79,12 +78,12 @@ gem "nap"
 #  gem 'carbon'
 #  gem 'json', '1.1.9'
 #  gem 'timecop'
-#
-#  gem 'activesupport', '~> 3.0.0'
-#  gem 'activerecord', '~> 3.0.0'
-#
-#  # emitter gems
-#  gem 'earth', '~> 0.0.36'
-#  gem 'emitter'
-#  gem 'sniff'
-#end
+
+  gem 'activesupport', '~> 3.0.0'
+  gem 'activerecord', '~> 3.0.0'
+
+  # emitter gems
+  gem 'earth', '~> 0.0.36'
+  gem 'emitter'
+  gem 'sniff'
+end
