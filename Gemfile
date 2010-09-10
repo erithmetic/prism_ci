@@ -70,8 +70,7 @@ group :prism_acceptance do
 #  gem 'capybara'
   gem 'cucumber'
 #  gem 'cucumber-rails'
-#  gem 'rake'
-#  gem 'rspec', '~>2.0.0.beta.17'
+  gem 'rspec', '~>2.0.0.beta.17'
 #
 #  # carbon gem
 #  gem 'artifice'
