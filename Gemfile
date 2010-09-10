@@ -44,47 +44,47 @@ gem "nap"
 # gem "resque"
 
 # = Development dependencies.
-group :test do
-  gem "ruby-debug" if RUBY_VERSION < '1.9'
-  gem "sqlite3-ruby"
-  gem "delayed_job"
-  gem "rr"
-  gem "mocha"
-  gem "redgreen"
-  gem "dm-sweatshop"
-  gem "ParseTree"
-  gem "randexp"
-  gem "rack-test", "0.5.0"
-  gem "rumbster"
-  gem "nokogiri"
-  gem "hpricot"
-  gem "contest"
-  gem "webrat"
-  gem "shout-bot"
-  gem "sinatra-ditties"
-  gem "webmock"
-  gem "turn"
-end
+#group :test do
+#  gem "ruby-debug" if RUBY_VERSION < '1.9'
+#  gem "sqlite3-ruby"
+#  gem "delayed_job"
+#  gem "rr"
+#  gem "mocha"
+#  gem "redgreen"
+#  gem "dm-sweatshop"
+#  gem "ParseTree"
+#  gem "randexp"
+#  gem "rack-test", "0.5.0"
+#  gem "rumbster"
+#  gem "nokogiri"
+#  gem "hpricot"
+#  gem "contest"
+#  gem "webrat"
+#  gem "shout-bot"
+#  gem "sinatra-ditties"
+#  gem "webmock"
+#  gem "turn"
+#end
 
-group :prism_acceptance do
-  gem 'bundler'
-  gem 'capybara'
-  gem 'cucumber'
-  gem 'cucumber-rails'
-  gem 'rake'
-  gem 'rspec', '~>2.0.0.beta.17'
-
-  # carbon gem
-  gem 'artifice'
-  gem 'carbon'
-  gem 'json', '1.1.9'
-  gem 'timecop'
-
-  gem 'activesupport', '~> 3.0.0'
-  gem 'activerecord', '~> 3.0.0'
-
-  # emitter gems
-  gem 'earth', '~> 0.0.36'
-  gem 'emitter'
-  gem 'sniff'
-end
+#group :prism_acceptance do
+#  gem 'bundler'
+#  gem 'capybara'
+#  gem 'cucumber'
+#  gem 'cucumber-rails'
+#  gem 'rake'
+#  gem 'rspec', '~>2.0.0.beta.17'
+#
+#  # carbon gem
+#  gem 'artifice'
+#  gem 'carbon'
+#  gem 'json', '1.1.9'
+#  gem 'timecop'
+#
+#  gem 'activesupport', '~> 3.0.0'
+#  gem 'activerecord', '~> 3.0.0'
+#
+#  # emitter gems
+#  gem 'earth', '~> 0.0.36'
+#  gem 'emitter'
+#  gem 'sniff'
+#end
