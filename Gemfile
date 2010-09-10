@@ -84,7 +84,7 @@ group :prism_acceptance do
   gem 'activerecord', '~> 3.0.0'
 
   # emitter gems
-  gem 'earth'
+  gem 'earth', '~> 0.0.36'
   gem 'emitter'
   gem 'sniff'
 end
